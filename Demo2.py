@@ -61,8 +61,6 @@ if button_load :
     # print(data_dataframe)
     data_dataframe=data_dataframe.drop(columns="Unnamed: 0")
     right.write(data_dataframe)
-
-
     load_data=pd.read_csv("birddataset.csv")
     load_data=pd.DataFrame(load_data)
     # X = load_data.drop(columns='ชนิดของนก', axis=1)

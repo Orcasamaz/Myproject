@@ -100,6 +100,7 @@ else:
     bird_care=0
 
 #predict
+predict_b=st.button("predict")
 model=load_model()
 data_user = (bird_price,bird_size,bird_speak,bird_care)
 data_user_array = np.array(data_user)

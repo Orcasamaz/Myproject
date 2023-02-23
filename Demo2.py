@@ -34,7 +34,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-save_b=left.button("save data ")
+
 #create model
 
 data = pd.read_csv('birddataset.csv')
@@ -62,7 +62,7 @@ if button_load :
     data_dataframe=data_dataframe.drop(columns="Unnamed: 0")
     right.write(data_dataframe)
 
-
+save_b=left.button("save data ")
 if save_b :
     load_data=pd.read_csv("birddataset.csv")
     load_data=pd.DataFrame(load_data)
